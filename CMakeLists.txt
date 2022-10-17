@@ -11,3 +11,4 @@ include(FetchContent)
 
 add_subdirectory(nlohmann)
 add_subdirectory(json_struct)
+add_subdirectory(proto)

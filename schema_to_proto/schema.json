@@ -1,0 +1,35 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "name": "Model",
+    "properties": {
+        "modelTag": {
+            "description": "Model tag",
+            "type": "uint8"
+        },
+        "modelFilePath": {
+            "description": "Model file path",
+            "type": "string"
+        },
+        "nestedType": {
+            "description": "Dummy nested type",
+            "type": "object",
+            "properties": {
+                "nestedArray": {
+                    "description": "Nested array",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "required": [
+                "nestedArray"
+            ]
+        }
+    },
+    "required": [
+        "modelTag",
+        "modelFilePath"
+    ]
+}
